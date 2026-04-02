@@ -38,9 +38,11 @@ Strong performance across precision, recall, and F1-score
 Packet size-related features are highly predictive
 Network flow characteristics strongly influence attack detection
 Feature importance reveals meaningful traffic behavior patterns
-📊 Feature Importance
 
-(Insert your graph screenshot here)
+📊 Feature Importance
+## Feature Importance
+
+![Feature Importance](feature_importance.png)
 
 ▶️ How to Run
 pip install -r requirements.txt
@@ -57,4 +59,26 @@ Real-time detection system
 Model deployment (Streamlit / Flask)
 Handling class imbalance
 Cross-validation & tuning
+
+## Results
+
+- Model: Random Forest Classifier
+- Accuracy: ~99.95%
+- Dataset: CICIDS2017
+- Features used: 78
+
+## Key Insights
+
+- Packet length–based features are the most important indicators of malicious traffic.
+- Features like:
+  - Max Packet Length
+  - Avg Bwd Segment Size
+  - Bwd Packet Length Max
+  strongly influence predictions.
+
+## Future Improvements
+
+- Handle class imbalance
+- Try advanced models (XGBoost, Neural Networks)
+- Deploy using Streamlit or Flask
 
